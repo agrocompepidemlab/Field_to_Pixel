@@ -1,0 +1,19 @@
+{
+  "title": "From Field to Pixel: A Deep Learning Pipeline for Automated Image Curation, Leaf Segmentation, and Quantification of Disease and Pest Damage in Maize",
+  "description": "Field-based plant phenotyping relies on RGB imagery from heterogeneous sources, ground robots and smartphones, yet the value of image streams is undermined by uncontrolled acquisition. Blur, variable illumination, occlusions, and complex backgrounds bias severity estimates, while manual expert curation is slow, subjective, and unsustainable at scale. A reproducible workflow is needed to curate multi-source imagery and deliver not only classification but quantitative severity estimation for multiple co-occurring phytosanitary problems. We developed and validated a three-stage deep learning pipeline for maize tar spot, common rust, and fall armyworm damage, using multitemporal RGB images from two countries, six sites, stages V4-R6, and robotic and smartphone platforms. The workflow proceeds stepwise: automated image quality assessment (IQA) to filter degraded images, leaf segmentation to isolate tissue from cluttered backgrounds, and lesion segmentation to quantify severity over the segmented leaf. Rather than a pre-selected model, we benchmarked multiple architectures per stage under identical partitions, reporting computational and environmental cost alongside accuracy. Xception matched expert curation (97.4% accuracy) while cutting screening time by up to 99.8%; U-Net++ with a ResNet34 encoder gave the most robust leaf delineation; and a hybrid U-Net–ResNet34–XGBoost model, fusing deep features with engineered descriptors, achieved the strongest lesion segmentation under severe class imbalance. End-to-end, the integrated pipeline reduced class-level MAE by 47.1% and RMSE by 54.9% versus unfiltered analysis, approached negligible bias, and lowered detection emissions by ~12%. This reproducible, resource-efficient framework moves field phenotyping beyond classification toward reliable severity quantification, and is transferable to other crops and phytosanitary problems.",
+  "creators": [
+    {
+      "name": "Laboratorio de Agrocomputación y Análisis Epidemiológico",
+      "affiliation": "Universidad Nacional de Colombia"
+    },
+    {
+      "name": "Department of Botany & Plant Pathology",
+      "affiliation": "Purdue University"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "agrocompuepidemlab"
+    }
+  ]
+}
